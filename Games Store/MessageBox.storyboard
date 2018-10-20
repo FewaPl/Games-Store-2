@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Message BoxVC-->
+        <scene sceneID="cn2-68-NXJ">
+            <objects>
+                <viewController storyboardIdentifier="MessageBoxVC" id="lez-Sh-Ptq" customClass="MessageBoxVC" customModule="Games_Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EXZ-cp-KCo">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSJ-fo-iDg">
+                                <rect key="frame" x="16" y="25" width="368" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEM-D4-gVo" customClass="XButton" customModule="Games_Store" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="139" width="288" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="XD7-4r-jEk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="CircleCurves" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="DoneButtonWithSender:" destination="lez-Sh-Ptq" eventType="touchUpInside" id="GeO-fX-dbd"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Box Show" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teG-5U-RQP">
+                                        <rect key="frame" x="16" y="16" width="336" height="107"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HEM-D4-gVo" firstAttribute="leading" secondItem="QSJ-fo-iDg" secondAttribute="leading" constant="40" id="CDJ-Fh-28W"/>
+                                    <constraint firstItem="teG-5U-RQP" firstAttribute="leading" secondItem="QSJ-fo-iDg" secondAttribute="leading" constant="16" id="HDD-eO-3Bh"/>
+                                    <constraint firstAttribute="height" constant="200" id="O1Y-Kx-A6F"/>
+                                    <constraint firstItem="HEM-D4-gVo" firstAttribute="top" secondItem="teG-5U-RQP" secondAttribute="bottom" constant="16" id="Whd-yg-3XT"/>
+                                    <constraint firstAttribute="trailing" secondItem="teG-5U-RQP" secondAttribute="trailing" constant="16" id="bqK-qQ-w8O"/>
+                                    <constraint firstAttribute="bottom" secondItem="HEM-D4-gVo" secondAttribute="bottom" constant="16" id="kvD-sy-C0X"/>
+                                    <constraint firstItem="teG-5U-RQP" firstAttribute="top" secondItem="QSJ-fo-iDg" secondAttribute="top" constant="16" id="lnW-cW-dJo"/>
+                                    <constraint firstAttribute="trailing" secondItem="HEM-D4-gVo" secondAttribute="trailing" constant="40" id="sBH-CW-GGN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39894584760273971" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QSJ-fo-iDg" firstAttribute="centerY" secondItem="EXZ-cp-KCo" secondAttribute="centerY" id="FJA-WP-zpb"/>
+                            <constraint firstItem="rnw-FD-dwf" firstAttribute="trailing" secondItem="QSJ-fo-iDg" secondAttribute="trailing" constant="16" id="Koq-p5-frx"/>
+                            <constraint firstItem="QSJ-fo-iDg" firstAttribute="leading" secondItem="rnw-FD-dwf" secondAttribute="leading" constant="16" id="TDr-Ul-D8F"/>
+                            <constraint firstItem="QSJ-fo-iDg" firstAttribute="centerX" secondItem="EXZ-cp-KCo" secondAttribute="centerX" id="ffS-QW-L75"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rnw-FD-dwf"/>
+                    </view>
+                    <size key="freeformSize" width="400" height="250"/>
+                    <connections>
+                        <outlet property="label" destination="teG-5U-RQP" id="kL1-qu-sHN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGt-CG-g3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145.59999999999999" y="41.379310344827587"/>
+        </scene>
+    </scenes>
+</document>
